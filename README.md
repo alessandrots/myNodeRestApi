@@ -2,7 +2,10 @@
 
 npm install
 
-node server.js
+node server.js  or
+ ./node_modules/.bin/nodemon server.js
+
+http://localhost:3001/
 
 http://localhost:3001/myrestapi/rest/logon
 

@@ -7,6 +7,11 @@ var api = require('../api'),
 module.exports  = function(app) {
   server.use(jsonServer.defaults());
 
+  app.get('/', function(req, res) {
+    console.log('all json');
+    res.json(dbJson);
+  });
+
   app.get('/myrestapi/rest/logon', function(req, res) {
     console.log('logon');
     res.json(dbJson['logon']);
